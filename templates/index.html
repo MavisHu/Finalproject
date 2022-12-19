@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <form action="/game" method="get">
+        <h1>Hi there, Let's play Tic-Tac-Toe!!</h1>
+        <img src="/static/ttt.png" width="240" height="240" />
+        <p>
+        <label> Enter name<br>
+            <input name="name" placeholder="name" autocomplete="off" type="text" autofocus name="name">
+        </label>
+        </p>
+        <button type="submit">Enter</button>
+    </form>
+{% endblock %}
+
+
+
+

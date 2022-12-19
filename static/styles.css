@@ -1,0 +1,37 @@
+.GameBoard {
+    border-collapse: collapse;
+}
+
+.innerBoard{
+    background-color: #dadada;
+    border: 2px solid rgb(42, 38, 38);
+    width: 150px;
+    height: 150px;
+    font-size: 14pt;
+    text-align: center;
+}
+
+.lightred, .darkred {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.lightred {
+    background-color: rgb(250, 230, 230);
+}
+
+.darkred {
+    background-color: rgba(210, 30, 30, 0.801);
+}
+
+.myclass{
+    color:red;
+    font-size: 140%;
+}
+
+.username{
+    color:red;
+}

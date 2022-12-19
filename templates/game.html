@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h1>it's {{ turn }} Turn!</h1>
+    <table class="GameBoard">
+        {% for i in range(3) %}
+            <tr class="innerBoard">
+                {% for j in range(3) %}
+                    <td class="innerBoard">
+                        {% if game[i][j] == "X" %}
+                        {% elif game[i][j] == "O" %}
+                        {% else %}
+                            <a href="{{ url_for('play', row=i, col=j) }}">Play {{ turn }} here.</a>
+                        {% endif %}
+                    </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+    </table>
+    <!-- <table class="GameBoard"> -->
+        <!-- <tr>
+            <th class="lightred">X</th>
+            <th class="darkred">X</th>
+            <th class="lightred">X</th>
+        </tr>
+        <tr>
+            <th class="darkred">X</th>
+            <th class="lightred">X</th>
+            <th class="darkred">X</th>
+        </tr>
+        <tr>
+            <th class="lightred">X</th>
+            <th class="darkred">X</th>
+            <th class="lightred">X</th>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br> -->
+<!-- 
+    <form action="/index" method="post">
+        <label> it's {{ name }} turn, where would you like to play? <br>
+            plaese enter 0-8 number <br>
+            <input n_humans="n"/>
+        </label>
+        <button type="submit">Enter</button>
+    </form>
+    </html> -->
+
+{% endblock %}
